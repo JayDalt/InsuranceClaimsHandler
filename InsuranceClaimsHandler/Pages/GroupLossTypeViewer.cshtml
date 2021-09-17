@@ -1,0 +1,32 @@
+﻿@page
+@model InsuranceClaimsHandler.Pages.ControlPanelModel
+@{
+    Layout = "/Pages/Shared/_LoggedInLayout.cshtml";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Model.DisplayName</h1>
+</div>
+
+<br />
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-2"><strong>Loss Type Id</strong></div>
+        <div class="col-2"><strong>Description</strong></div>
+        <div class="col-2"><strong>Active</strong></div>
+    </div>
+
+    <br />
+
+    @foreach (var loss in Model.LossTypes)
+    {
+        <div class="row">
+            <div class="col-2"><a href="LossTypeViewer?LossTypeId=@loss.LossTypeId">Type ID - @loss.LossTypeId</a></div>
+            <div class="col-2">@loss.LossTypeDesc</div>
+            <div class="col-2">@loss.Active</div>
+        </div>
+    }
+
+</div>
