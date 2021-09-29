@@ -10,9 +10,7 @@ namespace InsuranceClaimsHandler.Classes
 {
     public class UserDbHandler
     {
-        //green Clone
-
-        //can either take the remote or local, you get conflicts by having commits in both branches so only commit in one, git still needs work tho
+     
         public UserModel ValidateUserInput(string username, string password)
         {
             DataTable dt = GetUserDetails(username);
