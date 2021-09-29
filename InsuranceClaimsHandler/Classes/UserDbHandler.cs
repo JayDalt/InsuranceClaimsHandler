@@ -10,8 +10,7 @@ namespace InsuranceClaimsHandler.Classes
 {
     public class UserDbHandler
     {
-
-        //Change
+        //Cloned1
         public UserModel ValidateUserInput(string username, string password)
         {
             DataTable dt = GetUserDetails(username);
@@ -65,7 +64,6 @@ namespace InsuranceClaimsHandler.Classes
             {
                 Console.WriteLine("Can not open connection!");
             }
-
 
             return dt;
         }
