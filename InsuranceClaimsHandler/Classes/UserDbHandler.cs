@@ -10,6 +10,7 @@ namespace InsuranceClaimsHandler.Classes
 {
     public class UserDbHandler
     {
+        //Cloned
         public UserModel ValidateUserInput(string username, string password)
         {
             DataTable dt = GetUserDetails(username);
