@@ -10,7 +10,7 @@ namespace InsuranceClaimsHandler.Classes
 {
     public class UserDbHandler
     {
-        //no green
+        //oops I fucked this one up I want it back to green
         public UserModel ValidateUserInput(string username, string password)
         {
             DataTable dt = GetUserDetails(username);
