@@ -64,6 +64,7 @@ namespace InsuranceClaimsHandler.Classes
                 Console.WriteLine("Can not open connection!");
             }
 
+
             return dt;
         }
     }
