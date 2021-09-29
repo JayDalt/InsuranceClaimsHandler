@@ -7,6 +7,8 @@ namespace InsuranceClaimsHandler.Models
 {
     public class LossTypeModel
     {
+        //cloned project
+
         public int LossTypeId { get; set; }
         public string LossTypeCode { get; set; }
         public string LossTypeDesc { get; set; }
