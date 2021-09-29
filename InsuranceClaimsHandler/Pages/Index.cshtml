@@ -4,36 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
-
-<form method="post">
-
-    <div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <h2>Log in to get started</h2>
-    </div>
-
-    <br />
-
-    <p><strong>Please login using your username and password</strong></p>
-
-    <div class="row">
-        <div asp-validation-summary="All" class="text-danger"></div>
-    </div>
-
-    <div class=" row mb-4">
-        <div class="col">
-            <input type="text" asp-for="UserName" placeholder="Username" />
-        </div>
-    </div>
-
-    <div class=" row mb-2">
-        <div class="col">
-            <input type="password" asp-for="Password" placeholder="Password" />
-        </div>
-    </div>
-
-    <p style="color:red;">@Model.ErrorMessage</p>
-
-    <input type="submit" value="Submit" />
-
-</form>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
